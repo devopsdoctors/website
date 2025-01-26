@@ -19,14 +19,6 @@ export function Contact() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <MapPin className="h-6 w-6 text-[#099FC] mt-1" />
-                <div>
-                  <h4 className="font-medium">Location</h4>
-                  <p className="text-gray-600">123 Tech Street, Silicon Valley, CA 94025</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
                 <Clock className="h-6 w-6 text-[#099FC] mt-1" />
                 <div>
                   <h4 className="font-medium">Business Hours</h4>
