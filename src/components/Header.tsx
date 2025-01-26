@@ -18,6 +18,7 @@ export function Header() {
             <NavLink href="#services">Services</NavLink>
             <NavLink href="#technologies">Technologies</NavLink>
             <NavLink href="#team">Team</NavLink>
+            <NavLink href="#clients">Clients</NavLink>
             <NavLink href="#contact">Contact</NavLink>
           </nav>
 
