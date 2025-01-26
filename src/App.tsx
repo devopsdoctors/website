@@ -5,6 +5,7 @@ import { About } from './components/About';
 import { TechStack } from './components/TechStack';
 import { Process } from './components/Process';
 import { Team } from './components/Team';
+import { Clients } from './components/Clients';
 import { Contact } from './components/Contact';
 import { TeamModalProvider } from './context/TeamModalContext';
 import { TeamMemberModal } from './components/TeamMemberModal';
