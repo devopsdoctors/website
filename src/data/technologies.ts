@@ -1,6 +1,6 @@
 export const containerization = [
   { name: 'Docker', logo: 'https://www.vectorlogo.zone/logos/docker/docker-icon.svg' },
-  { name: 'Podman', logo: 'https://www.vectorlogo.zone/logos/podman/podman-icon.svg' },
+  { name: 'Podman', logo: 'https://cdn.simpleicons.org/podman/892CA0' },
   { name: 'LXC', logo: 'https://linuxcontainers.org/static/img/containers.png' },
   { name: 'Docker Swarm', logo: 'https://www.vectorlogo.zone/logos/docker/docker-icon.svg' },
   { name: 'Harbor', logo: 'https://www.vectorlogo.zone/logos/goharborio/goharborio-icon.svg' }
@@ -26,7 +26,7 @@ export const cicd = [
 export const monitoring = [
   { name: 'Prometheus', logo: 'https://www.vectorlogo.zone/logos/prometheusio/prometheusio-icon.svg' },
   { name: 'Grafana', logo: 'https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg' },
-  { name: 'Loki', logo: 'https://grafana.com/static/assets/img/logos/logo-loki.svg' },
+  { name: 'Loki', logo: 'https://raw.githubusercontent.com/grafana/loki/master/docs/sources/logo.png' },
   { name: 'Elasticsearch', logo: 'https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg' },
   { name: 'Logstash', logo: 'https://www.vectorlogo.zone/logos/elasticco_logstash/elasticco_logstash-icon.svg' },
   { name: 'Fluentd', logo: 'https://www.vectorlogo.zone/logos/fluentd/fluentd-icon.svg' },
