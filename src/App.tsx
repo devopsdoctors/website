@@ -21,6 +21,7 @@ function App() {
           <Process />
           <TechStack />
           <Team />
+          <Clients />
           <Contact />
         </main>
         <TeamMemberModal />
