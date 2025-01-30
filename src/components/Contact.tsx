@@ -14,7 +14,7 @@ export function Contact() {
                 <Mail className="h-6 w-6 text-[#099FC] mt-1" />
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="text-gray-600">info@devopsdoctors.com</p>
+                  <p className="text-gray-600">info@mail.devopsdoctors.com</p>
                 </div>
               </div>
 

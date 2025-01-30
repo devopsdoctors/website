@@ -29,7 +29,7 @@ export function About() {
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl font-bold mb-6">About Dr.DevOps</h2>
+          <h2 className="text-3xl font-bold mb-6">About DevOpsDoctors</h2>
           <p className="text-lg text-gray-600">
             We are a team of passionate infrastructure and cloud experts dedicated to helping businesses 
             build and maintain robust, scalable, and efficient IT systems. With years of experience in 
