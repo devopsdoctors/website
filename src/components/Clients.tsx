@@ -1,47 +1,50 @@
 import React from 'react';
 
-export function Clients() {
-  const clients = [
-    {
-      name: 'Mazan Echand',
-      url: 'https://mazanechand1.com/',
-      description: 'Leading provider of innovative solutions'
-    },
-    {
-      name: 'Raaz Gold',
-      url: 'https://raazgold.com/',
-      description: 'Premium jewelry and precious metals'
-    },
-    {
-      name: 'Fiza Store',
-      url: 'https://fiza.store/',
-      description: 'Modern e-commerce platform'
-    },
-    {
-      name: 'ArvanCloud',
-      url: 'https://www.arvancloud.com/',
-      description: 'Cloud infrastructure and CDN services'
-    }
-  ];
+const clients = [
+  {
+    name: "Mazand Chand",
+    logo: "https://mazanechand1.com/static/img/mazane-chand-logo.svg",
+    url: "https://mazanechand1.com"
+  },
+  {
+    name: "Reza Gold",
+    logo: "https://raazgold.com/static/img/raaz-logo.png",
+    url: "https://raazgold.com"
+  },
+  {
+    name: "Fiza",
+    logo: "https://fiza.store/wp-content/uploads/2024/09/logo.jpg-1.webp",
+    url: "https://fiza.store"
+  },
+  {
+    name: "ArvanCloud",
+    logo: "https://www.arvancloud.ir/images/v6/svg/logo-header-desktop-v6.svg",
+    url: "https://www.arvancloud.ir"
+  }
+];
 
+export function Clients() {
   return (
-    <section id="clients" className="py-20 bg-gray-50">
+    <section id="clients" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-16">Our Trusted Clients</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
           {clients.map((client) => (
             <a
               key={client.name}
               href={client.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
+              className="block w-full aspect-[3/2] transition-transform hover:scale-105"
             >
-              <div className="text-center">
-                <h3 className="text-xl font-semibold mb-2 text-[#099FC] group-hover:text-[#041821] transition-colors">
-                  {client.name}
-                </h3>
-                <p className="text-gray-600 text-sm">{client.description}</p>
+              <div className="w-full h-full flex items-center justify-center p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+                <div className="w-full h-full relative">
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="absolute inset-0 w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all p-4"
+                  />
+                </div>
               </div>
             </a>
           ))}
