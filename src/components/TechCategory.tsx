@@ -8,13 +8,28 @@ interface TechCategoryProps {
 
 export function TechCategory({ title, technologies }: TechCategoryProps) {
   return (
-    <div className="bg-gray-50 rounded-xl p-8">
-      <h3 className="text-2xl font-semibold mb-6">{title}</h3>
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+    <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-200 
+      hover:border-blue-500 transition-all duration-300 transform hover:scale-105">
+      <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-blue-600 transition-colors">
+        {title}
+      </h3>
+      <div className="space-y-4">
         {technologies.map((tech) => (
-          <div key={tech.name} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-            <img src={tech.logo} alt={tech.name} className="h-12 w-12 object-contain mb-3" />
-            <span className="text-sm font-medium text-gray-700">{tech.name}</span>
+          <div 
+            key={tech.name} 
+            className="flex items-center space-x-3 p-3 rounded-lg bg-gray-50 hover:bg-blue-50 transition-colors group/item"
+          >
+            <div className="relative">
+              <img 
+                src={tech.logo} 
+                alt={tech.name} 
+                className="w-8 h-8 object-contain filter grayscale group-hover/item:grayscale-0 transition-all" 
+              />
+              <div className="absolute inset-0 bg-white rounded-full opacity-0 group-hover/item:opacity-10 transition-opacity" />
+            </div>
+            <span className="text-sm font-medium text-gray-700 group-hover/item:text-blue-600 transition-colors">
+              {tech.name}
+            </span>
           </div>
         ))}
       </div>
